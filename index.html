@@ -1,25 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
         <div class="logo">
             MyCurrencyConverter
         </div>
         <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Contact</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/contact.html">Contact</a></li>
         </ul>
     </nav>
 
     <div class="container">
+        <h1>Choose a currency and enter the amount</h1>
+        <form action="/action.php" method="get"> 
+            <!-- base currency  -->
+            <div class="cols">
+                <label for="currency">Choose base currency : </label>
+                <select name="currency">
+                    <option value="INR">Indian Rupee</option>
+                    <option value="USD">US Dollar</option>
+                    <option value="EUR">Euro</option>
+                </select>
+                <label for="amount">Enter amount : </label>
+                <input type="number" name="amount" id="" min="0">
+            </div>
+            
+            <!-- target currency -->
+            <div class="cols">
+                <label for="currency">Choose target currency : </label>
+                <select name="currency">
+                    <option value="INR">Indian Rupee</option>
+                    <option value="USD">US Dollar</option>
+                    <option value="EUR">Euro</option>
+                </select>
+                <label for="result">Amount is : </label>
+                <input type="number" name="result" id="" min="0" disabled>
+            </div>
+            
+            <button type="submit">Convert</button>
 
+        </form>
     </div>
 
     <footer>
@@ -28,4 +58,5 @@
 
     <script src="myscript.js"></script>
 </body>
+
 </html>
