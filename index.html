@@ -30,6 +30,11 @@
                     <option value="INR">Indian Rupee</option>
                     <option value="USD">US Dollar</option>
                     <option value="EUR">Euro</option>
+                    <option value="EUR">Japanese Yen</option>
+                    <option value="EUR">Chinese Dollar</option>
+                    <option value="EUR">Swiss Franc</option>
+                    <option value="EUR">Pound Sterling</option>
+                    <option value="EUR">Canadian Dollar</option>
                 </select>
                 <label for="amount">Enter amount : </label>
                 <input type="number" name="amount" id="" min="0">
@@ -42,14 +47,43 @@
                     <option value="INR">Indian Rupee</option>
                     <option value="USD">US Dollar</option>
                     <option value="EUR">Euro</option>
+                    <option value="EUR">Japanese Yen</option>
+                    <option value="EUR">Chinese Dollar</option>
+                    <option value="EUR">Swiss Franc</option>
+                    <option value="EUR">Pound Sterling</option>
+                    <option value="EUR">Canadian Dollar</option>                    
                 </select>
                 <label for="result">Amount is : </label>
                 <input type="number" name="result" id="" min="0" disabled>
-            </div>
-            
+            </div>            
             <button type="submit">Convert</button>
-
         </form>
+        
+        
+        <h2 class="other">Here are some other converted currencies </h1>
+        
+        <div class="othercurrencies">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody id="table1">
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody id = "table2">
+                </tbody>
+            </table>
+        </div>
     </div>
 
     <footer>

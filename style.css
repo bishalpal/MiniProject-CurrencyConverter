@@ -76,6 +76,7 @@ button {
     border: 1px solid teal;
     transition: all;
     transition-duration: 500ms;
+    cursor: pointer;
 }
 
 button:hover {
@@ -87,7 +88,29 @@ button:hover {
     flex-direction: column;
 }
 
+.other {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.othercurrencies {
+    display: flex;
+    justify-content: center;
+}
 
+.other, .othercurrencies {
+    /* display: none; */
+}
+ table {
+    width: 25vw;
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+th {
+    border-bottom: 1px solid black;
+}
 footer {
     text-align: center;
     font-family: 'Poppins', sans-serif;
