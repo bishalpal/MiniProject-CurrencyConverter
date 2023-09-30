@@ -16,28 +16,34 @@
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="/about.html">About Us</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
         </ul>
     </nav>
 
     <div class="container">
         <h1>Choose a currency and enter the amount</h1>
-        <form action="/action.php" method="get"> 
+        <form action="#" method="get"> 
             <!-- base currency  -->
             <div class="cols">
                 <label for="currency_base">Choose base currency : </label>
                 <select name="currency_base">
                     <option value="INR">Indian Rupee</option>
                     <option value="USD">US Dollar</option>
+                    <option value="SGD">Singapore Dollar</option>
                     <option value="EUR">Euro</option>
-                    <option value="EUR">Japanese Yen</option>
-                    <option value="EUR">Chinese Dollar</option>
-                    <option value="EUR">Swiss Franc</option>
-                    <option value="EUR">Pound Sterling</option>
-                    <option value="EUR">Canadian Dollar</option>
+                    <option value="JPY">Japanese Yen</option>
+                    <option value="CNY">Chinese Yuan</option>
+                    <option value="CHF">Swiss Franc</option>
+                    <option value="GBP">British Pound Sterling</option>
+                    <option value="CAD">Canadian Dollar</option>
+                    <option value="HKD">Hong Kong Dollar</option>
+                    <option value="KRW">South Korean Won</option>
+                    <option value="LKR">Sri Lankan Rupee</option>
+                    <option value="SAR">Saudi Riyal</option>
+                    <option value="THB">Thai Baht</option>
                 </select>
                 <label for="amount">Enter amount : </label>
-                <input type="number" name="amount" id="" min="0">
+                <input type="number" name="amount" id="amount" min="0" required>
             </div>
             
             <!-- target currency -->
@@ -46,23 +52,29 @@
                 <select name="currency_target">
                     <option value="INR">Indian Rupee</option>
                     <option value="USD">US Dollar</option>
+                    <option value="SGD">Singapore Dollar</option>
                     <option value="EUR">Euro</option>
-                    <option value="EUR">Japanese Yen</option>
-                    <option value="EUR">Chinese Dollar</option>
-                    <option value="EUR">Swiss Franc</option>
-                    <option value="EUR">Pound Sterling</option>
-                    <option value="EUR">Canadian Dollar</option>                    
+                    <option value="JPY">Japanese Yen</option>
+                    <option value="CNY">Chinese Yuan</option>
+                    <option value="CHF">Swiss Franc</option>
+                    <option value="GBP">British Pound Sterling</option>
+                    <option value="CAD">Canadian Dollar</option>                    
+                    <option value="HKD">Hong Kong Dollar</option>                    
+                    <option value="KRW">South Korean Won</option>                    
+                    <option value="LKR">Sri Lankan Rupee</option>                    
+                    <option value="SAR">Saudi Riyal</option>                    
+                    <option value="THB">Thai Baht</option>                    
                 </select>
                 <label for="result">Amount is : </label>
-                <input type="number" name="result" id="" min="0" disabled>
+                <input type="number" name="result" id="result" min="0" disabled>
             </div>            
-            <button type="submit">Convert</button>
+            <input type="submit" value="Convert" class="submitbtn">
         </form>
         
         
         <h2 class="other">Here are some other converted currencies </h1>
         
-        <div class="othercurrencies">
+        <div class="other">
             <table>
                 <thead>
                     <tr>
